@@ -77,14 +77,6 @@ class Snake(GameObjectBase):
             return True
 
         # check if snake has a collision with itself
-        # if len(self.rectangles) > 0:
-        #     body_rectangles = self.rectangles[3:]
-        #     head = self.rectangles[0]
-        #
-        #     for rect in body_rectangles:
-        #         if head.colliderect(rect):
-        #             return True
-
         if len(self.body) > 0:
             filtered_body = self.body[1:]
             head_x, head_y = self.head
